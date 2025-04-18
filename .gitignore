@@ -12,7 +12,7 @@ __pycache__/
 *.pot
 *.mo
 *.pyc
-
+temp.py
 # ========================
 # Virtual Environments
 # ========================
