@@ -48,4 +48,4 @@ if __name__ == "__main__":
     server = Server(app.wsgi_app)
     server.watch("templates/")
     server.watch("static/")
-    server.serve(debug=True, port=5000)
+    server.serve(debug=True, host="0.0.0.0", port=5000)
