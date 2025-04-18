@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, session
 from livereload import Server
 from dotenv import load_dotenv
+import ast
 import os
 load_dotenv()
 
@@ -26,7 +27,8 @@ def home():
             session["result"] = ""
         elif value == "=":
             try:
-                session["result"] = f"{eval(session["result"])}"
+
+                session["result"] = str(ast.literal_eval(session["result"]))
                 print(f"eval done {session['result']}")
             except Exception:
                 print("❌ Houston we have problem ❌")
