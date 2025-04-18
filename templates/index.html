@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <!-- подключаем css -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+    <h2>Calculator</h2>
+    <div>
+        <label>
+            <input class="input" id="result_box" type="text" readonly value="{{ result }}">
+        </label>
+    </div>
+    <form method="POST" class="calculator-wrapper">
+        <div class="digits-grid">
+            <button class="digit_btn" type="submit" name="button" value="1">1</button>
+            <button class="digit_btn" type="submit" name="button" value="2">2</button>
+            <button class="digit_btn" type="submit" name="button" value="3">3</button>
+
+            <button class="digit_btn" type="submit" name="button" value="4">4</button>
+            <button class="digit_btn" type="submit" name="button" value="5">5</button>
+            <button class="digit_btn" type="submit" name="button" value="6">6</button>
+
+            <button class="digit_btn" type="submit" name="button" value="7">7</button>
+            <button class="digit_btn" type="submit" name="button" value="8">8</button>
+            <button class="digit_btn" type="submit" name="button" value="9">9</button>
+
+            <button class="digit_btn" type="submit" name="button" value="0" style="grid-column: span 2;">0</button>
+            <button class="digit_btn" type="submit" name="button" value=".">,</button>
+        </div>
+
+        <div class="operators-grid">
+            <button class="operator_btn" type="submit" name="button" value="+">+</button>
+            <button class="operator_btn" type="submit" name="button" value="-">-</button>
+            <button class="operator_btn" type="submit" name="button" value="*">*</button>
+            <button class="operator_btn" type="submit" name="button" value="/">/</button>
+            <button class="operator_btn" type="submit" name="button" value="=">=</button>
+            <button class="operator_btn" type="submit" name="button" value="C">C</button>
+            <button class="operator_btn" type="submit" name="button" value="<"><</button>
+        </div>
+    </form>
+    <footer class="footer">
+        © 2025 Kir Calculator
+    </footer>
+</div>
+
+
+</body>
+</html>
