@@ -28,7 +28,7 @@ def home():
         elif value == "=":
             try:
 
-                session["result"] = str(ast.literal_eval(session["result"]))
+                session["result"] = str(eval(session["result"]))
                 print(f"eval done {session['result']}")
             except Exception:
                 print("❌ Houston we have problem ❌")
